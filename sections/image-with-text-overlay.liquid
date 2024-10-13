@@ -1,0 +1,45 @@
+{{ 'custom-iconwithtext.css' | asset_url | stylesheet_tag }}
+{% style %}
+  .custom-section-{{ section.id }} {
+      padding-top: {{ section.settings.top_padding }}px;
+      padding-bottom: {{ section.settings.bottom_padding }}px;
+  }
+{% endstyle %}
+<div class="page-width img-txt-overlay-contaner ">
+  {% if section.settings.iamge !=blank %}
+    {{ block.settings.image | image_url: width: 80| image_tag }}
+  {% endif %}
+</div>
+{% schema %}
+{
+  "name": "Image with text overlay",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label":"Image"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label":"text"
+    },
+    {
+      "type": "text",
+      "id": "description",
+      "label":"description"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Image with text overlay",
+      
+    }
+  ]
+}
+{% endschema %}
