@@ -9,3 +9,8 @@
     text-align: left;
     color:#8E5D2E    
 }
+.img-txt-overlay-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
