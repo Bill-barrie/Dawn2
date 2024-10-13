@@ -13,8 +13,8 @@
       "type": "image-with-text-overlay",
       "settings": {
         "image": "shopify://shop_images/Frame_1206.png",
-        "text": "",
-        "description": ""
+        "title": "title",
+        "description": "description"
       }
     }
   },
