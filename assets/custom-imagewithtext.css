@@ -1,3 +1,11 @@
 .img-txt-overlay-contaner{
     height: 300px;
 }
+.img-txt-overlay-title>p{
+    font-family: Calibri;
+    font-size: 55.62px;
+    font-weight: 300;
+    line-height: 67.85px;
+    text-align: left;
+    color:#8E5D2E    
+}
