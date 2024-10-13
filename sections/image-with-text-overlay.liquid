@@ -1,9 +1,6 @@
 {{ 'custom-iconwithtext.css' | asset_url | stylesheet_tag }}
 {% style %}
-  .custom-section-{{ section.id }} {
-      padding-top: {{ section.settings.top_padding }}px;
-      padding-bottom: {{ section.settings.bottom_padding }}px;
-  }
+
 {% endstyle %}
 <div class="page-width img-txt-overlay-contaner ">
   {% if section.settings.iamge !=blank %}
