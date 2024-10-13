@@ -7,7 +7,8 @@
 {% endstyle %}
 <div class="page-width img-txt-overlay-contaner ">
   {% if section.settings.iamge !=blank %}
-    {{ block.settings.image | image_url: width: 80 | image_tag }}
+    {{ section.settings.image | image_url: width:1600 | image_tag }}
+    {% comment %} {{ block.settings.image | image_url: width: 80 | image_tag }} {% endcomment %}
   {% endif %}
 </div>
 {% schema %}
