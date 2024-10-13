@@ -6,7 +6,12 @@
   }
 {% endstyle %}
 <div class="Img-txt-overlay-container page-width">
-  
+  <div class="custom-image">
+    {% unless block.settings.image == blank %}
+      {{ block.settings.image | image_url: width: 1600
+        | image_tag }}
+    {% endunless %}
+  </div>
 </div>
 {% schema %}
 {
@@ -24,7 +29,7 @@
       "settings": [
         {
           "type": "image_picker",
-          "id": "Image",
+          "id": "image",
           "label": "Image"
         },
         {
